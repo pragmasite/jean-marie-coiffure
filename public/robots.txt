@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jean-marie-coiffure.pragmasite.com/sitemap.xml
