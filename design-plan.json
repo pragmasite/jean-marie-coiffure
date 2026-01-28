@@ -1,0 +1,140 @@
+{
+  "projectName": "jean-marie-coiffure",
+  "colors": {
+    "primary": "#8B5A6B",
+    "primaryForeground": "#FFFFFF",
+    "secondary": "#D4A574",
+    "secondaryForeground": "#2D2D2D",
+    "accent": "#C9A9BC",
+    "accentForeground": "#2D2D2D",
+    "background": "#FDFBF9",
+    "foreground": "#2D2D2D",
+    "muted": "#F5F0EC",
+    "mutedForeground": "#6B6B6B",
+    "border": "#E8E0DA"
+  },
+  "typography": {
+    "headingFont": "Playfair Display",
+    "bodyFont": "Lato",
+    "baseFontSize": "16px"
+  },
+  "layout": [
+    {
+      "name": "Header",
+      "description": "Fixed navigation with logo, language switcher (FR/DE/IT/EN), and smooth scroll links to sections"
+    },
+    {
+      "name": "DisclaimerModal",
+      "description": "Initial modal overlay explaining this is a draft preview, not indexed by Google, may contain errors, with dismiss button"
+    },
+    {
+      "name": "Hero",
+      "description": "Full-width hero section with business name, tagline about hair and nail services, and call-to-action buttons for phone contact"
+    },
+    {
+      "name": "About",
+      "description": "Introduction to Jean Marie Coiffure & Onglerie, highlighting the salon experience and Maria's expertise"
+    },
+    {
+      "name": "Services",
+      "description": "Grid or card layout showcasing all services: haircuts, coloring, keratin treatment, nail care, massages, hair removal, and Colombian Lifting"
+    },
+    {
+      "name": "OpeningHours",
+      "description": "Clean table or card display of weekly schedule, Tuesday through Saturday"
+    },
+    {
+      "name": "Location",
+      "description": "Embedded map showing Boulevard de Pérolles 28, Fribourg with contact details and social media links"
+    },
+    {
+      "name": "Footer",
+      "description": "Business name, address, phone numbers, social media icons for Facebook and Instagram, copyright"
+    }
+  ],
+  "components": [
+    {
+      "name": "NavigationHeader",
+      "purpose": "Sticky header with logo, navigation links, and language selector dropdown"
+    },
+    {
+      "name": "DisclaimerModal",
+      "purpose": "Popup modal shown on first visit with draft disclaimer and dismiss functionality"
+    },
+    {
+      "name": "HeroSection",
+      "purpose": "Eye-catching introduction with business name, subtitle, and CTA buttons"
+    },
+    {
+      "name": "AboutSection",
+      "purpose": "Text content area introducing the salon and its philosophy"
+    },
+    {
+      "name": "ServiceCard",
+      "purpose": "Individual service display with title and brief description"
+    },
+    {
+      "name": "ServicesGrid",
+      "purpose": "Responsive grid container for service cards"
+    },
+    {
+      "name": "OpeningHoursTable",
+      "purpose": "Styled table showing days and hours of operation"
+    },
+    {
+      "name": "MapEmbed",
+      "purpose": "Interactive map showing salon location at coordinates 46.799288, 7.153035"
+    },
+    {
+      "name": "ContactInfo",
+      "purpose": "Display phone numbers and address without a form"
+    },
+    {
+      "name": "SocialLinks",
+      "purpose": "Icons linking to Facebook and Instagram profiles"
+    },
+    {
+      "name": "LanguageSwitcher",
+      "purpose": "Dropdown or button group to switch between FR, DE, IT, EN versions"
+    },
+    {
+      "name": "Footer",
+      "purpose": "Bottom section with contact details, social links, and copyright"
+    }
+  ],
+  "featureImplementations": [
+    {
+      "feature": "Multi-language Support",
+      "implementation": "Default language French (postal code 1700), with URL-based routing (/de, /fr, /it, /en) for translations"
+    },
+    {
+      "feature": "Disclaimer Modal",
+      "implementation": "Modal appears on page load with localStorage check to only show once per session, contains draft preview warning"
+    },
+    {
+      "feature": "Smooth Scroll Navigation",
+      "implementation": "Single-page layout with anchor links and smooth scroll behavior to each section"
+    },
+    {
+      "feature": "Responsive Design",
+      "implementation": "Mobile-first approach with breakpoints at 768px (tablet) and 1024px (desktop)"
+    },
+    {
+      "feature": "Logo Implementation",
+      "implementation": "Download provided logo from staticlocal.ch and store in assets directory, use as both header logo and favicon"
+    },
+    {
+      "feature": "SEO Meta Tags",
+      "implementation": "Title: Jean Marie Coiffure & Onglerie - Fribourg, Description: Salon de coiffure et onglerie à Fribourg, Open Graph tags for social sharing"
+    },
+    {
+      "feature": "Map Integration",
+      "implementation": "Embed Google Maps or OpenStreetMap centered on coordinates 46.799288, 7.153035"
+    },
+    {
+      "feature": "Click-to-Call",
+      "implementation": "Phone numbers as tel: links for mobile users"
+    }
+  ],
+  "additionalNotes": "This is a beauty salon in Fribourg, Switzerland offering hair styling, nail care, and body treatments including the unique Colombian Lifting service. The design should evoke elegance, femininity, and professionalism with warm, sophisticated colors. The dusty rose primary color and gold secondary accent reflect the beauty industry while maintaining a modern, clean aesthetic. Playfair Display for headings adds elegance while Lato provides excellent readability for body text. The single-page layout ensures fast loading and easy navigation. All services should be clearly presented without emojis as specified. Contact is via phone only - no contact form required."
+}
